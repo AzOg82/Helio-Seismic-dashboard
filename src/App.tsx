@@ -101,11 +101,11 @@ export default function App() {
         setLoadingStatus('Downloading NASA space weather repositories...');
 
         const urls = {
-          flares: './solar_seismic_data/solar/flares.json',
-          cmes: './solar_seismic_data/solar/cmes.json',
-          hss: './solar_seismic_data/solar/hss.json',
-          storms: './solar_seismic_data/solar/storms.json',
-          earthquakes: './solar_seismic_data/seismic/earthquakes.json'
+          flares: 'https://raw.githubusercontent.com/AzOg82/helioseismic-data/main/solar_seismic_data/solar/flares.json',
+          cmes: 'https://raw.githubusercontent.com/AzOg82/helioseismic-data/main/solar_seismic_data/solar/cmes.json',
+          hss: 'https://raw.githubusercontent.com/AzOg82/helioseismic-data/main/solar_seismic_data/solar/hss.json',
+          storms: 'https://raw.githubusercontent.com/AzOg82/helioseismic-data/main/solar_seismic_data/solar/storms.json',
+          earthquakes: 'https://raw.githubusercontent.com/AzOg82/helioseismic-data/main/solar_seismic_data/seismic/earthquakes.json'
         };
 
         // Fetch flares
@@ -378,7 +378,7 @@ export default function App() {
                 {error}
               </div>
               <p className="text-[10px] text-white/40 leading-normal">
-                Please ensure that the local space-weather and seismic dataset JSON files are correctly placed in the public/solar_seismic_data/ folder.
+                Please check your network connection and ensure that the raw GitHub URLs for the space-weather and seismic datasets are accessible.
               </p>
             </div>
 
