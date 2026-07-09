@@ -1,0 +1,6 @@
+{
+  "name": "HelioSeismic Correlation Dashboard",
+  "description": "An advanced research dashboard for investigating potential correlations between solar activity and seismic events, focusing on spatial and temporal alignments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
